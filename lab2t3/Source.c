@@ -3,7 +3,7 @@
 
 void main()
 {
-	setlocale(LC_ALL, "RUS");
+	setlocale(LC_CTYPE, "RUS");
 
 	float n = 3, L = 133;
 	int k = 3, m = 1;

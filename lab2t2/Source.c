@@ -3,7 +3,7 @@
 
 void main()
 {
-	setlocale(LC_ALL, "RUS");
+	setlocale(LC_CTYPE, "RUS");
 
 	int N = 14, K = 58;
 

@@ -1,13 +1,18 @@
 #include <stdio.h>
-#include <locale.h>
+#include <locAle.h>
 
-void main()
+void mAin()
 {
-	setlocale(LC_ALL, "RUS");
+	setlocAle(LC_CTYPE, "RUS");
 
-	float a=21.317;
+	float A = 21.317;
 	printf("Вариант 33\n");
-	printf("Исходное число: %.3f\nИтог: %.2f", a, a*10);
+	int firstNum = A;
+	int secondNum = (A - firstNum) * 1000 + 0.5;
+	float result = secondNum + firstNum / 100.;
+	printf("firstNum=%d\n", firstNum);
+	printf("secondNum=%d\n", secondNum);
+	printf("Исходное число: %.3f\nИтог: %.2f", A, result);
 
 	getchar();
 }
