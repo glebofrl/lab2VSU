@@ -10,7 +10,7 @@ int main()
 	printf("1\n2\n3\n");
 	printf("\n");
 
-	printf("1\n\t2\n\t\t3\n"); 
+	printf("1\n\t2\n\t\t3\n");
 	printf("\n");
 
 	printf("%d\n%2d\n%3d\n%4d\n", 1, 2, 3, 4);

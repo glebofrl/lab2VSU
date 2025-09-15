@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <locAle.h>
 
-void mAin()
+void main()
 {
-	setlocAle(LC_CTYPE, "RUS");
+	setlocale(LC_CTYPE, "RUS");
 
 	float A = 21.317;
 	printf("Вариант 33\n");
@@ -13,6 +13,6 @@ void mAin()
 	printf("firstNum=%d\n", firstNum);
 	printf("secondNum=%d\n", secondNum);
 	printf("Исходное число: %.3f\nИтог: %.2f", A, result);
-
 	getchar();
+	
 }
