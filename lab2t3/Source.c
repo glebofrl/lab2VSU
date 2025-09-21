@@ -5,10 +5,16 @@ void main()
 {
 	setlocale(LC_CTYPE, "RUS");
 
-	float n = 3, L = 133;
-	int k = 3, m = 1;
+	float n = 4, L = 393;
+	int k = 2, m = 6;
+	int sumkm = k + m;
 
-	printf("Дано:\n%12.0f\n%12.0f\n        _______\nОтвет:\n        %+08.3f", n, L, n/L );
+	printf("Дано:\n");
+	printf("%*.f\n", sumkm + 2, n);
+	printf("%*.f\n", sumkm + 2, L);
+	printf("%*c%.*s\n", 7, ' ', sumkm + 2, "__________________________________________________________________");
+	printf("Ответ:\n");
+	printf("%*c%+0*.*f", sumkm - 1, ' ', sumkm + 2, m, n / L);
 
 	getchar();
 }
