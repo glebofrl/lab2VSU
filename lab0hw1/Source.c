@@ -10,8 +10,6 @@ void main()
 	int firstNum = A;
 	int secondNum = (A - firstNum) * 1000 + 0.5;
 	float result = secondNum + firstNum / 100.;
-	printf("firstNum=%d\n", firstNum);
-	printf("secondNum=%d\n", secondNum);
 	printf("Исходное число: %.3f\nИтог: %.2f", A, result);
 	getchar();
 	
